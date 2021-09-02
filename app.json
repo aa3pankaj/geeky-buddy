@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "geeky-buddy",
+    "name": "Geeky Buddy",
     "slug": "geeky-buddy",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.aa3pankaj.geekybuddy"
     },
     "web": {
       "favicon": "./assets/favicon.png"

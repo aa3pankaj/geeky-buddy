@@ -21,7 +21,12 @@ const Profile = () => {
     location,
     match,
     name,
-  } = DEMO[7];
+    leetcode,
+    codechef,
+    linkedin,
+    github,
+    level
+  } = DEMO[1];
 
   return (
     <ImageBackground
@@ -30,7 +35,7 @@ const Profile = () => {
     >
       <ScrollView style={styles.containerProfile}>
         <ImageBackground source={image} style={styles.photo}>
-          <View style={styles.top}>
+          {/* <View style={styles.top}>
             <TouchableOpacity>
               <Icon
                 name="chevron-back"
@@ -48,7 +53,7 @@ const Profile = () => {
                 style={styles.topIconRight}
               />
             </TouchableOpacity>
-          </View>
+          </View> */}
         </ImageBackground>
 
         <ProfileItem
@@ -60,9 +65,14 @@ const Profile = () => {
           info2={info2}
           info3={info3}
           info4={info4}
+          leetcode={leetcode}
+          codechef={codechef}
+          linkedin={linkedin}
+          github={github}
+          level={level}
         />
 
-        <View style={styles.actionsProfile}>
+        {/* <View style={styles.actionsProfile}>
           <TouchableOpacity style={styles.circledButton}>
             <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
           </TouchableOpacity>
@@ -71,7 +81,7 @@ const Profile = () => {
             <Icon name="chatbubble" size={20} color={WHITE} />
             <Text style={styles.textButton}>Start chatting</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </ScrollView>
     </ImageBackground>
   );

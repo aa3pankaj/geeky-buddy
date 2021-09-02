@@ -30,6 +30,11 @@ export type ProfileItemT = {
   location?: string;
   matches: string;
   name: string;
+  leetcode: string;
+  codechef: string;
+  linkedin: string;
+  github: string;
+  level?: string;
 };
 
 export type TabBarIconT = {
@@ -52,4 +57,9 @@ export type DataT = {
   info3?: string;
   info4?: string;
   location?: string;
+  leetcode: string;
+  codechef: string;
+  linkedin: string;
+  github: string;
+  level?: string;
 };

@@ -3,6 +3,7 @@ import { Text, View } from "react-native";
 import Icon from "./Icon";
 import { ProfileItemT } from "../types";
 import styles, { DARK_GRAY, WHITE } from "../assets/styles";
+import { Linking } from 'react-native';
 
 const ProfileItem = ({
   age,
@@ -12,12 +13,18 @@ const ProfileItem = ({
   info4,
   location,
   matches,
+  level,
   name,
+  leetcode,
+  codechef,
+  linkedin,
+  github
 }: ProfileItemT) => (
   <View style={styles.containerProfileItem}>
     <View style={styles.matchesProfileItem}>
       <Text style={styles.matchesTextProfileItem}>
-        <Icon name="heart" size={13} color={WHITE} /> {matches}% Match!
+        {/* <Icon name="heart" size={13} color={WHITE} />  */}
+        {level}
       </Text>
     </View>
 
@@ -29,31 +36,38 @@ const ProfileItem = ({
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
-        <Icon name="person" size={12} color={DARK_GRAY} />
+        <Icon name="code" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{info1}</Text>
+      <Text style={styles.infoContent}>{leetcode}</Text>
     </View>
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
-        <Icon name="pizza" size={12} color={DARK_GRAY} />
+        <Icon name="code" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{info2}</Text>
+      <Text style={styles.infoContent}>{codechef}</Text>
     </View>
 
     <View style={styles.info}>
       <Text style={styles.iconProfile}>
-        <Icon name="airplane" size={12} color={DARK_GRAY} />
+        <Icon name="code" size={12} color={DARK_GRAY} />
       </Text>
-      <Text style={styles.infoContent}>{info3}</Text>
+      <Text style={styles.infoContent}>{linkedin}</Text>
     </View>
 
     <View style={styles.info}>
+      <Text style={styles.iconProfile}>
+        <Icon name="github" size={12} color={DARK_GRAY} />
+      </Text>
+      <Text style={styles.infoContent}>{github}</Text>
+    </View>
+
+    {/* <View style={styles.info}>
       <Text style={styles.iconProfile}>
         <Icon name="calendar" size={12} color={DARK_GRAY} />
       </Text>
       <Text style={styles.infoContent}>{info4}</Text>
-    </View>
+    </View> */}
   </View>
 );
 

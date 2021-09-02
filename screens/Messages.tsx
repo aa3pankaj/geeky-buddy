@@ -19,9 +19,9 @@ const Messages = () => (
     <View style={styles.containerMessages}>
       <View style={styles.top}>
         <Text style={styles.title}>Messages</Text>
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <Icon name="ellipsis-vertical" color={DARK_GRAY} size={20} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
 
       <FlatList

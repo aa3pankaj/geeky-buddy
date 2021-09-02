@@ -73,7 +73,7 @@ const App = () => (
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
-                    iconName="chatbubble"
+                    iconName="wechat"
                     text="Chat"
                   />
                 ),
@@ -87,7 +87,7 @@ const App = () => (
                 tabBarIcon: ({ focused }) => (
                   <TabBarIcon
                     focused={focused}
-                    iconName="person"
+                    iconName="user"
                     text="Profile"
                   />
                 ),
